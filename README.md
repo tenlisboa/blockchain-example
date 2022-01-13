@@ -17,8 +17,8 @@ is 10, the user is going to have to figure out a hash that starts with 10 zeros,
 ### blockchain.js
 - It's basically the chain itself, we have the `blocks` property and the method to add blocks into the chain.
 - We also have the validation, it means:
-  1 - The hash of the block has to be the same, that is, if the data or any one of the properties of the Block got changed
+    * The hash of the block has to be the same, that is, if the data or any one of the properties of the Block got changed
   the hash provided by `generationHash` function will be different meaning that the Block is corrupted.
-  2 - The Blocks have to be in order, is some Block is in a different order it means that the chain is corrupted.
-  3 - The Hash Blocks have to be linked, if one of the Blocks are not linking the previous Block correctly it means that the
+    * The Blocks have to be in order, is some Block is in a different order it means that the chain is corrupted.
+    * The Hash Blocks have to be linked, if one of the Blocks are not linking the previous Block correctly it means that the
   chain is corrupted.
